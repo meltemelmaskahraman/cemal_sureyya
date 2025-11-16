@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemal Süreya - İkinci Yeni'nin Usta Kalemi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Inter font for modern aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212; /* Koyu arka plan */
+            color: #E0E0E0; /* Açık metin rengi */
+            line-height: 1.75;
+        }
+        .text-accent {
+            color: #3B82F6; /* Mavi vurgu rengi */
+        }
+        .card {
+            background-color: #1E1E1E;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+        }
+        .poem-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .poem-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3B82F6;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto space-y-12">
+
+        <!-- Başlık Bölümü -->
+        <header class="text-center pt-8 pb-12">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight">
+                Cemal <span class="text-accent">Süreya</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl font-light text-gray-400">
+                "Şiirimiz, aşkımızın en büyük tanığıdır."
+            </p>
+        </header>
+
+        <!-- Biyografi ve Portre Bölümü -->
+        <section class="card p-6 md:p-10 rounded-xl flex flex-col lg:flex-row items-center lg:items-start gap-8">
+            <div class="lg:w-1/3">
+                <!-- Cemal Süreya'nın soyut portresi için yer tutucu görsel -->
+                <img src="https://placehold.co/400x400/3B82F6/FFFFFF?text=Cemal+S%C3%BCreya" 
+                     alt="Cemal Süreya'nın sanat eseri portresi" 
+                     class="w-full h-auto rounded-xl object-cover shadow-2xl">
+            </div>
+            <div class="lg:w-2/3">
+                <h2 class="text-3xl font-bold mb-4 poem-title">Biyografi: İkinci Yeni'nin Sesi</h2>
+                <p class="text-gray-300 mb-4">
+                    Asıl adı Cemalettin Seber olan Cemal Süreya (1931-1990), Türk şiirinin en önemli akımlarından biri olan İkinci Yeni'nin önde gelen isimlerindendir. Erzincan'da doğdu. Hayatının büyük bir bölümü maliye müfettişliği gibi resmi görevlerle geçti, ancak ruhu her zaman şiire, edebiyata ve aşka aitti.
+                </p>
+                <p class="text-gray-300 mb-4">
+                    Şiirlerinde geleneksel yapıyı yıkarak, günlük dili, mizahı ve ironiyi derin bir lirizmle birleştirdi. Özellikle aşk, kadın, ayrılık ve şehir temalarını işledi. Soyadındaki ikinci 'y' harfini bir iddia sonucu kaybettiği rivayet edilir.
+                </p>
+                <p class="text-gray-300">
+                    Başlıca eserleri arasında <span class="text-accent font-semibold">Üvercinka</span>, <span class="text-accent font-semibold">Göçebe</span>, <span class="text-accent font-semibold">Beni Öp Sonra Doğur Beni</span> ve <span class="text-accent font-semibold">Sıcak Nal</span> bulunur. Şiirin yanı sıra deneme, eleştiri ve günlük türlerinde de önemli eserler vermiştir.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seçme Şiirler Bölümü -->
+        <section class="space-y-8">
+            <h2 class="text-4xl font-bold text-white text-center mb-6">Seçme Şiirlerden Dizeler</h2>
+            
+            <!-- Şiir 1: Üvercinka -->
+            <div class="card p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-accent poem-title">Üvercinka'dan</h3>
+                <blockquote class="border-l-4 border-blue-600 pl-4 italic text-gray-400">
+                    <p class="mb-2">Biliyorum sana giden yollar kapalı</p>
+                    <p class="mb-2">Çoktan unuttun beni, demin miydi</p>
+                    <p class="mb-2">Adımı bile anmaz oldun.</p>
+                    <p class="mb-2">Hani eskiden olsa omuzumda uyurdun</p>
+                    <p>Şimdi olsa da yarım kalırdı</p>
+                    <p class="text-right mt-4 not-italic font-medium text-gray-500">Kuşlar uçar, senin ellerinle</p>
+                </blockquote>
+            </div>
+
+            <!-- Şiir 2: Beni Öp Sonra Doğur Beni -->
+            <div class="card p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-accent poem-title">Beni Öp Sonra Doğur Beni</h3>
+                <blockquote class="border-l-4 border-blue-600 pl-4 italic text-gray-400">
+                    <p class="mb-2">Önce ellerin, ellerin, sonra ellerin.</p>
+                    <p class="mb-2">Yani bir aşkın başlangıcından</p>
+                    <p class="mb-2">Daha garip, daha güzel bir şey var mı?</p>
+                    <p class="mb-2">Beni öp, sonra doğur beni.</p>
+                    <p>Islak bir yorgan gibi sarmala</p>
+                    <p class="text-right mt-4 not-italic font-medium text-gray-500">Bu karanlık, bu soğuk ellerimi</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Aforizmalar ve Sözler Bölümü -->
+        <section class="pt-6">
+            <h2 class="text-4xl font-bold text-white text-center mb-6">Unutulmaz Sözleri</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Söz 1 -->
+                <div class="card p-6 rounded-xl">
+                    <p class="text-xl italic text-gray-300">
+                        "Hayat kısa, kuşlar uçuyor."
+                    </p>
+                    <footer class="mt-3 text-right text-accent font-medium">— Cemal Süreya</footer>
+                </div>
+                <!-- Söz 2 -->
+                <div class="card p-6 rounded-xl">
+                    <p class="text-xl italic text-gray-300">
+                        "Sevişmek birleşmek değil, birbirini tüketmektir."
+                    </p>
+                    <footer class="mt-3 text-right text-accent font-medium">— Cemal Süreya</footer>
+                </div>
+                <!-- Söz 3 -->
+                <div class="card p-6 rounded-xl">
+                    <p class="text-xl italic text-gray-300">
+                        "Oysa, bir kez bile sarılmamışken birbirimize, bunca zamandır nasıl ayrı kalmıştık?"
+                    </p>
+                    <footer class="mt-3 text-right text-accent font-medium">— Cemal Süreya</footer>
+                </div>
+                <!-- Söz 4 -->
+                <div class="card p-6 rounded-xl">
+                    <p class="text-xl italic text-gray-300">
+                        "Ben de bilirim felsefeyi, ben de yaparım bir şey. Ama bu, benim yüzümden bir kadının acı çekmesine neden olacaksa, ben felsefeyi sevmem."
+                    </p>
+                    <footer class="mt-3 text-right text-accent font-medium">— Cemal Süreya</footer>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 text-gray-500 text-sm border-t border-gray-800 mt-12">
+            <p>Cemal Süreya anısına. Web tasarımı İkinci Yeni'nin estetiğinden esinlenilmiştir.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
